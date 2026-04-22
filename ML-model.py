@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_score, accuracy_score, recall_score, classification_report, confusion_matrix
 
-df=pd.read_csv("C:\\Users\\khans\\Downloads\\archive (4)\\Admission_Predict.csv")
+df=pd.read_csv("Admission_Predict.csv")
 print("Dataset Preview:\n", df.head())
 
 df.rename(columns={"Chance of Admit ":"Chance"},inplace=True)
