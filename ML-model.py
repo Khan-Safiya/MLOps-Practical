@@ -25,11 +25,3 @@ print("\nClassification Report:\n", classification_report(y_pred,y_test))
 
 print("Actual Values: \n", y_test[:10].values)
 print("Predicted Values: \n", y_pred[:10])
-
-gre=float(input("\nEnter the GRE Score (out of 340): "))
-cgpa=float(input("Enter the CGPA (out of 10): "))
-y_pred=model.predict([[gre,cgpa]])
-if y_pred[0]==1:
-    print("\nThe student is likely to get admission.")
-else:
-    print("\nThe student is unlikely to get admission.")
